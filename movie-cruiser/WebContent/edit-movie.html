@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Cruiser  </title>
+
+<script src="script.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "style.css" />
+</head>
+<body>
+<header>
+  <h1>Movie Cruiser &nbsp&nbsp<img src="C:\Users\764719\Documents\movie-cruiser\WebContent\images.png" width="30" height="30"></h1>
+<a  id="menu" href="movie-list-admin.html">Movies</a>
+</header>
+
+      <h1>Edit Movie</h1> 
+<form action="edit-movie-status.html" name="form" method="post" onsubmit="return editMovie();">
+     <label id="title"> Title </label>
+     <br/><br/>
+      <input type="text" name="title" id="ftitle" size="90">
+       </br></br>
+      <table>
+       <tr><th>
+       <label id="boxoffice"> Box Office($) </label>
+     <br/><br/>
+      <input type="text" name="boxOffice" id="fgross" size="20">
+       </th>
+       <th>
+      <label> Active </label>
+     <br/><br/>
+      <input type="radio" name="active" value="yes" checked>Yes<input type="radio" name="active" value="no"> No
+        </th>
+        <th>
+         <label>Date of Launch</label>
+     <br/><br/>
+      <input type="text" placeholder="dd/mm/yyyy" name="dateOfLaunch" size="20" id="fdate">
+        </th>
+      <th>
+      <label> Genre </label>
+       <br/><br/>
+     <select name="genre" id="fgenre">
+     <option></option>
+    <option value="Main Couse">Superhero</option>
+    <option value="starters">Science Fiction</option>
+    <option value="Dessert">Romance</option>
+    <option value="Drinks">Comedy</option>
+     <option value="Drinks">Adventure</option>
+      <option value="Drinks">Thriller</option>
+  </select>
+     </th>
+     </table>
+<input type="checkbox" name="hasTeaser" class ="checkbox" value="yes" checked>Has Teaser
+     </br></br>
+    <input type="submit" name="submit" class="button" value="Save">
+</form>
+
+    
+
+<footer>
+  Copyright @ 2019
+</footer>
+
+</body>
+</html>
